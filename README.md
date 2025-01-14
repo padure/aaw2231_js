@@ -1,12 +1,11 @@
-🖥️ Asistență pentru programarea client-side a site-urilor Web
-📚 Exemple de cod din lecțiile de JavaScript
+Curs JavaScript – Asistență pentru programarea client-side a site-urilor Web
+📚 Descriere generală
+Acest repository conține toate exemplele de cod utilizate în cadrul cursului "Asistență pentru programarea client-side a site-urilor Web", destinat elevilor care urmează specialitatea Administrarea aplicațiilor Web. Scopul cursului este de a forma competențe necesare pentru dezvoltarea aplicațiilor web dinamice, utilizând limbajul JavaScript și tehnologii asociate pe partea de client.
 
-Acest repository conține exemplele de cod utilizate în cadrul cursului "Asistență pentru programarea client-side a site-urilor Web". Exemplele acoperă noțiuni de bază și avansate din limbajul JavaScript, utilizat pentru dezvoltarea aplicațiilor web pe partea client-side.
-🧑‍🏫 Modulul 1: Introducere în JavaScript
-Exemplele din acest modul includ:
+Cursul acoperă următoarele subiecte principale:
 
-✅ Sintaxa de bază
-✅ Tipuri de date și variabile
-✅ Operatori
-✅ Funcții
-✅ Evenimente în DOM
+Limbaje de scriptare pentru web
+Manipularea Document Object Model (DOM)
+Gestionarea evenimentelor
+Validarea formularelor
+Utilizarea bibliotecilor JavaScript
