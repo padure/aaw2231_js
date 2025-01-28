@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functii</title>
+</head>
+<body>
+    <script>
+        //Declarative
+        function fullUserName ({firstName, lastName}, age = 30) {
+            return `${firstName} ${lastName}`;
+        }
+        const FullName = fullUserName({firstName: 'John', lastName: 'Doe'});
+        console.log(fullUserName({firstName: 'William', lastName: 'Smith'}));
+        //Constante sau Expresie
+        const lengthUserName = function(user){
+            return user.name.length ?? 0;
+        }
+        console.log( lengthUserName({name: "Ion"}) );
+        //Asociativa sau Arrow
+        const marirePret50 = pret => pret * 1.5;
+        console.log( marirePret50(50) );
+        //Anonima
+        // function(){
+        //     return 4;   
+        // }
+        ( () => {
+            const PORT = 8000;
+            console.log(PORT);
+        } ) ();
+
+        const users = ['John Doe', 'Will Smith', 'Jack Russo'];
+
+        users.forEach( (user) => {
+            console.log( user.toUpperCase(), user.length );
+        } );
+    </script>
+</body>
+</html>
