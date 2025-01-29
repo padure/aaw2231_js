@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        const  Produs = {
+            nume : 'iPhone 14',
+            pret : 4500,
+            stoc : 5,
+            aplicaDiscount : function(procent){
+                return this.pret - this.pret * procent / 100;
+            },
+            afisare: function(){
+
+            }
+        };
+    </script>
+</body>
+</html>
