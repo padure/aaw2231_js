@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+</head>
+<body>
+    <script>
+        // Ferestre
+        // Alert
+        // window.alert('Eu invat JS');
+        // // Confirmare
+        // window.confirm('Ai majoratul?');
+        // // Prompt
+        // let nume = window.prompt('Care este numele tau?');
+        // alert(nume);
+        // // Document
+        // document.write('Eu invat JS!');
+        let numarRandom = Math.floor( Math.random() * 10 ) + 1;
+        let numarUser   = Number( prompt('Scrie un numar din intervalul 1 - 10') );
+        if(numarUser > 10 ) {
+            alert('Ai depasit intervalul!');
+        }
+        if(numarRandom == numarUser) {
+            alert('Ai ghicit!');
+        }
+        document.write(numarRandom + " => " + numarUser);
+    </script>
+</body>
+</html>
