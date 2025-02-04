@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+</head>
+
+<body>
+    <script>
+        //1
+        let num = 1;
+        //2
+        for (let i = num; i <= 10; i++) {
+            console.log(i);
+        }
+        //3
+        while (num <= 10) {
+            if (num % 2 == 0) console.log(num);
+            num++;
+        }
+        //4
+        for (let i = 1; i <= 10; i++) {
+            if (i <= 5) {
+                console.log(`Numarul: ${i} este mai mic sau egal ca 5`);
+            } else {
+                console.log(`Numarul: ${i} este mai mare ca 5`);
+            }
+        }
+        //5 - 6
+        for (let i = 1; i <= 10; i++) {
+            switch (i) {
+                case 10:
+                    console.log('Ultimul număr este 10');
+                    break;
+                default:
+                    console.log('Numărul nu se potrivește cu niciunul dintre cazurile definite');
+                    break;
+            }
+        }
+        //7.1 
+        let numarRandom = Math.floor( Math.random() * 1000 ) + 1;
+        console.log(`Numarul random este: ${numarRandom}`);
+        // Verificare numar prim
+        const isPrim = (numar) => {
+            if( numar < 2 ) return false;
+            for(let i = 2; i <= Math.sqrt(numar); i++){
+                if(numar % i === 0) return false;
+            }
+            return true;
+        }
+        do {
+            numarRandom++;
+        } while (!isPrim(numarRandom));
+        console.log(`Numarul: ${numarRandom} este cel mai apropiat număr prim`);
+    </script>
+</body>
+
+</html>

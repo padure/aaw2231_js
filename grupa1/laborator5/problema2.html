@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+</head>
+<body>
+    <script>
+        //dd.mm.yyyy
+        const data = prompt('Scrie data', 'dd.mm.yyyy');
+        const MReg = /(0[1-9]|1[0-2])/;
+        const DReg = /(0[1-9]|1[0-9]|2[0-9]|3[0-1])/;
+        const YReg = /\d{4}/;
+
+        if(DReg.test(data) && MReg.test(data) && YReg.test(data)){
+            alert('True');
+        }
+    </script>
+</body>
+</html>
