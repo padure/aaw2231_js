@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+    <style>
+        .card{
+            width: 600px;
+            margin: 20px auto 0;
+        }
+        .card > div{
+            margin-bottom: 10px;
+            box-shadow: 1px 1px 2px #f2f2f2;
+            padding: 5px 10px;
+        }
+        .card > div b{
+            color: green;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        const car = {
+            marca: "Dacia",
+            model: "Logan",
+            anul: 2020,
+            distanta: 84000,
+        }
+
+        const displayCarInfo = (car) => {
+            return `<div class='card'>
+                <div><b>Marca:</b> ${car.marca}</div>
+                <div><b>Model:</b> ${car.marca}</div>
+                <div><b>Anul:</b> ${car.marca}</div>
+                <div><b>Distanta:</b> ${car.marca} km</div>
+            </div>`;
+        }
+
+        document.write(displayCarInfo(car));
+    </script>
+</body>
+</html>

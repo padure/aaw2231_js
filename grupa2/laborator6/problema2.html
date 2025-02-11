@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+</head>
+<body>
+    <script>
+        const user = {
+            name: "John Doe",
+            age: 52
+        }
+
+        const displayAllPropsValues = (obj) => {
+            const response = [];
+            for (const key in obj) {
+                response.push(`${key}:${obj[key]}`);
+            }
+            return response;
+        }
+
+        console.log(displayAllPropsValues(user));
+    </script>
+</body>
+</html>

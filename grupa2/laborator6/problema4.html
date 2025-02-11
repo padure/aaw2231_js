@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+</head>
+<body>
+    <script>
+        const user = {}
+        const errors = [];
+        let nume = prompt('Introdu numele:'); 
+        if(!/^[A-Z]+[a-z]$/ig.test(nume)){
+            errors.push('nume');
+        }
+        let email = prompt('Introdu email-ul:');
+        if(!/^[\w.-]+@[a-zA-Z\d.-]+\.[a-zA-Z]{2,}$/i.test(email)){
+            errors.push('email');
+        } 
+        let telefon = prompt('Introdu telefonul:'); 
+        if(!/^\+373\d{8}$/.test(telefon)){
+            errors.push('telefon');
+        }
+        let dataNasterii = prompt('Introdu data nasterii in formatul dd.mm.yyyy:');
+        if(!/^\d{2}\.\d{2}\.\d{4}$/.test(dataNasterii)){
+            errors.push('data nasterii');
+        }
+        
+    </script>
+</body>
+</html>

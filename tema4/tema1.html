@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tema 1</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        //Number
+        const numar1 = 159.589;
+        const numar2 = new Number(569);
+        // console.log(numar1.toString());
+        // console.log(numar2);
+        // console.log(typeof numar1);
+        // console.log(typeof numar2);
+        //Boolean
+        const logic1 = true;
+        const logic2 = new Boolean(false);
+        // console.log(logic1);
+        // console.log(logic2);
+        // console.log(Boolean.prototype);
+        const p = document.querySelector('p');
+        document.writeln(logic1);
+        document.write(logic2);
+        p.textContent = logic2;
+        p.innerText = logic2;
+        //String
+        const str1 = "<p class='red'>Text</p>";
+        const str2 = 'Text';
+        const str3 = `Text ${numar1}`;
+        const str4 = new String('Text');
+
+        // console.log(str4);
+        //Date
+        // const date = new Date(); // Creare
+        
+        const arr1 = new Array();
+        
+        const arr2 = ["rosu", 58, {name:"John"}, new Date(), [1]];
+
+        arr1[1] = "rosu";
+        arr1[5] = "rosu";
+
+        // console.log(arr1[4]);
+        // console.log(arr2[4][2]);
+        // JSON
+        fetch('data.json')
+            .then(data => data.json())
+            .then(products => {
+                products.products.map(product =>{
+                    console.log(product.name);
+                })
+            });
+    </script>
+</body>
+</html>

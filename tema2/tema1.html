@@ -35,6 +35,24 @@
         users.forEach( (user) => {
             console.log( user.toUpperCase(), user.length );
         } );
+        // Callback function
+        const name = () => {
+            return () => {
+                let name = 'JS';
+                return () => {
+                    console.log(name);
+                }
+            }
+        }
+        name()()();
+        
+        const suma = (a, b) => a + b;
+
+        const multiply = ( sum, nr ) => {
+            return sum(nr, nr);
+        }   
+
+        console.log( multiply(suma, 10) );
     </script>
 </body>
 </html>
