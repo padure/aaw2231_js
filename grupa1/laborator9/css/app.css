@@ -35,9 +35,12 @@
 }
 .container > p{
     font-size: 1.2rem;
+    text-align: center;
+    padding: 0 3rem;
 }
 .container .services{
     margin-top: 8rem;
+    flex-wrap: wrap;
     display: flex;
     gap: 1rem;
     padding: 3rem;
@@ -52,6 +55,14 @@
     box-shadow: 0px 0px 3px #e0e0e0;
     padding: 1rem;
     background-color: #fafafa;
+    flex: 1 1 calc(33% - 4rem);
+    min-width: 200px;
+    transition: all ease-in-out 0.5s;
+}
+.services > .card:hover{
+    cursor: pointer;
+    transform: translateY(3px);
+    box-shadow: 0px 0px 4px #a0a0a0;
 }
 .services > .card > h5{
     margin: 15px 0;
