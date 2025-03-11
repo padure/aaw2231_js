@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 2</title>
+    <style>
+        .text-brown{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <p>Luettgen Burgs</p>
+    <p>Sofia Track</p>
+    <p>Norval Junctions</p>
+    <p>Walker Vista</p>
+    <p>Lessie Dale</p>
+    <p>Ankunding Road</p>
+    <p>Rowe Walks</p>
+    <p>Dayne Square</p>
+    <p>Neoma Haven</p>
+    <p>Schroeder Island</p>
+    <p>Zemlak Extensions</p>
+    <p>Kenyatta Hill</p>
+    <p>Roberts Landing</p>
+    <p>Bergstrom Extensions</p>
+    <p>Merl Well</p>
+    <script>
+        const pElements = document.querySelectorAll('p');
+        pElements.forEach( (p, i) => {
+            if((i + 1) % 3 === 0) p.setAttribute('class', 'text-brown');
+        });
+    </script>
+</body>
+</html>

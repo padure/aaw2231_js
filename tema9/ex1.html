@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 1</title>
+    <style>
+        .text-brown{
+            color: brown;
+        }
+        .text-lime{
+            color: lime;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Sunt Header
+    </header>
+    <main>
+        <ol id="orase">
+            <li>Lake Constancetown</li>
+            <li>Baileystad</li>
+            <li>West Una</li>
+            <li>Kubmouth</li>
+        </ol>
+    </main>
+    <footer>
+        Sunt un Footer
+    </footer>
+    <script>
+        const olElement = document.getElementById('orase');
+        const [header, main, footer] = olElement.parentNode.parentNode.children;
+        const h1Element = document.createElement('h1');
+        h1Element.textContent = "Header Title";
+        h1Element.setAttribute('class', 'text-brown');
+        header.textContent = "";
+        header.appendChild(h1Element);
+        console.log(header);
+        console.log(main);
+        const footerTitle = `<h1 class='text-lime'>Footer Title</h1>`;
+        footer.innerHTML = footerTitle;
+        console.log(footer);
+    </script>
+</body>
+</html>

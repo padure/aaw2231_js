@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 3</title>
+    <style>
+        .activ{
+            color: green;
+            border: 1px solid green;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <p>Tallahassee</p>
+    <p>San Mateo</p>
+    <p>Cedar Hill</p>
+    <p>Jackson</p>
+    <p>Port Jaredville</p>
+    <p>Wisozkshire</p>
+    <p>North Cathrine</p>
+    <p>Keeblerfort</p>
+    <p>Macon-Bibb County</p>
+    <p>North Joesphborough</p>
+    <p>Port Jaylenview</p>
+    <p>Arlington</p>
+    <p>New Queenie</p>
+    <p>New Bartonville</p>
+    <p>San Marcos</p>
+    <script>
+        const pElements = document.querySelectorAll('p');
+        pElements.forEach( p => {
+            p.addEventListener('click', (event)=>{
+                // event.target.classList.add('activ'); //Adauga
+                event.target.classList.toggle('activ');
+            });
+        });
+    </script>
+</body>
+</html>

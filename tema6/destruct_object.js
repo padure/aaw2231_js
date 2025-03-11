@@ -5,6 +5,7 @@ const user = {
     skils: ["HTML", "CSS", "JS", "React", "MongoDB"]
 }
 
-const {skils} = user;
+const {skils:data} = user;
+// const {name} = user;
 
-skils.forEach(skill => console.log(skill))
+data.forEach(skill => console.log(skill))

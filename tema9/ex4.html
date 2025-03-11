@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 4</title>
+    <style>
+        p{
+            cursor: pointer;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <p>Cambridgeshire</p>
+    <p>Berkshire</p>
+    <p>Bedfordshire</p>
+    <p>Bedfordshire</p>
+    <p>Avon</p>
+    <p>Cambridgeshire</p>
+    <p>Borders</p>
+    <p>Avon</p>
+    <p>Cambridgeshire</p>
+    <p>Borders</p>
+    <script>
+        const pElements = document.querySelectorAll('p');
+        pElements.forEach( p => {
+            p.setAttribute('counter', 0);
+            p.setAttribute('city', p.textContent);
+            p.addEventListener('click', (e)=>{
+                let counter = Number(e.target.getAttribute('counter')) ?? 0;
+                e.target.setAttribute('counter', ++counter);
+                e.target.textContent = `${e.target.getAttribute('city')} ${counter}`;
+            });
+        });
+    </script>
+</body>
+</html>

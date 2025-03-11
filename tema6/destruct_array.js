@@ -1,17 +1,18 @@
 const numere = [23, 14, 90, 2025, 5, 9, 78];
-let [, , alTreilea, ...rest] = numere;
-// console.log(alTreilea);
-// console.log(rest);
+let [primul, , alTreilea, ...rest] = numere;
+console.log(primul);
+console.log(alTreilea);
+console.log(rest);
 
 const fullStack = [
     ["Html", "Css", "Js"],
     ["PHP", "SQL", "C#", "Express"]
 ];
 
-const [frontEnd, backend] = fullStack;
+const [frontend, backend] = fullStack;
 
-// console.log(frontEnd);
-// console.log(backend);
+console.log(frontend);
+console.log(backend);
 
 const orase = [undefined, "Cahul", "Cantemir", "Leova"];
 
