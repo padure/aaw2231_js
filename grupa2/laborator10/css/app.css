@@ -16,3 +16,6 @@
     height: 15dvh;
     object-fit: cover;
 }
+.images > img:hover{
+    cursor: pointer;
+}

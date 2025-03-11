@@ -18,7 +18,13 @@
         </div>
     </div>
     <script>
-        
+        const images = document.querySelectorAll(".images > img");
+        images.forEach( img => {
+            img.addEventListener('click', (e)=>{
+                const image = document.querySelector('.container > img');
+                image.src = e.target.src;
+            });
+        });
     </script>
 </body>
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitiul 2</title>
+    <style>
+        .container{
+            width: 600px;
+            margin: 50px auto;
+            padding: 5px;
+        }
+        .header button{
+            width: 50%;
+            margin: 0 auto;
+            display: block;
+            outline: 1px solid brown;
+            border: 0;
+            background-color: #be4747;
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all ease-in-out 0.1s;
+        }
+        .header button:hover{
+            outline: 1px solid #722121;
+            background-color: brown;
+            transform: translateY(-1px);
+        }
+        .main li{
+            color: brown;
+            padding: 5px 0;
+        }
+        .main li .edit{
+            background-color: orange;
+        }
+        .main li .delete{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <button id="adauga">Adauga</button>
+        </div>
+        <div class="main">
+            <ol id="tasks">
+
+            </ol>
+        </div>
+    </div>
+    <script>
+        const button = document.querySelector("#adauga");
+        const tasks  = document.querySelector("#tasks");
+        button.addEventListener('click', () => {
+            const task = prompt('Scrie o sarcina');
+            const li = document.createElement('li');
+            const deleteBtn = document.createElement('button');
+            deleteBtn.textContent = 'Delete';
+            deleteBtn.classList.add('delete');           
+            deleteBtn.addEventListener('click', () => {
+                alert('Delete');
+            });
+            const editBtn = document.createElement('button');
+            editBtn.textContent = 'Edit';
+            editBtn.classList.add('edit');           
+            editBtn.addEventListener('click', ()=>{
+                alert('Edit');
+            });
+            li.textContent = task;
+            li.appendChild(deleteBtn);
+            li.appendChild(editBtn);
+            tasks.appendChild(li);
+        });
+    </script>
+</body>
+</html>
