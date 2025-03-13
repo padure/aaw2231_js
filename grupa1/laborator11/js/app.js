@@ -1,11 +1,14 @@
 const adauga = document.getElementById('adauga');
 const tasks = document.getElementById('tasks');
 //Functions
-const deleteTask = () => {
-    console.log('Delete');
+const deleteTask = (e) => {
+    if(confirm('Esti sigur?'))
+        e.parentNode.parentNode.remove();
 }
-const editTask = () => {
-    console.log('Edit');
+const editTask = (e) => {
+    const [task, ] = e.parentNode.parentNode.children;
+    const newTask = prompt(`Modifica sarcina`, `${task.textContent}`);
+    task.textContent = newTask;
 }
 //Functionalitate button Adauga
 adauga.addEventListener('click', () => {
@@ -13,8 +16,8 @@ adauga.addEventListener('click', () => {
     tasks.innerHTML += `<li>
         <div>${task}</div>
         <div>
-            <button class='delete' onclick='deleteTask()'>Delete</button>
-            <button class='edit' onclick='editTask()'>Edit</button>
+            <button class='delete' onclick='deleteTask(this)'>Delete</button>
+            <button class='edit' onclick='editTask(this)'>Edit</button>
         </div>
     </li>`;
 });
