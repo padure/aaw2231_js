@@ -60,34 +60,9 @@
             <button id="adauga">Adauga</button>
         </div>
         <div class="main">
-            <ol id="tasks">
-
-            </ol>
+            <ol id="tasks"></ol>
         </div>
     </div>
-    <script>
-        const button = document.querySelector("#adauga");
-        const tasks  = document.querySelector("#tasks");
-        button.addEventListener('click', () => {
-            const task = prompt('Scrie o sarcina');
-            const li = document.createElement('li');
-            const deleteBtn = document.createElement('button');
-            deleteBtn.textContent = 'Delete';
-            deleteBtn.classList.add('delete');           
-            deleteBtn.addEventListener('click', () => {
-                alert('Delete');
-            });
-            const editBtn = document.createElement('button');
-            editBtn.textContent = 'Edit';
-            editBtn.classList.add('edit');           
-            editBtn.addEventListener('click', ()=>{
-                alert('Edit');
-            });
-            li.textContent = task;
-            li.appendChild(deleteBtn);
-            li.appendChild(editBtn);
-            tasks.appendChild(li);
-        });
-    </script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
