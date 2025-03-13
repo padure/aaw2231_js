@@ -1,0 +1,56 @@
+.container{
+    width: 600px;
+    margin: 50px auto;
+    box-shadow: 0 0 2px #bfbfbf, 0 0 2px #bfbfbf;
+    padding: 5px;
+    background-color: #ffa50010;
+}
+
+.container > button{
+    outline: none;
+    border: 1px solid brown;
+    color: brown;
+    background-color: #a52a2a22;
+    border-radius: 2px;
+    padding: 3px 8px;
+    display: block;
+    margin: 1em auto;
+    transition: all ease-in-out 0.4s;
+}
+
+.container button:hover{
+    cursor: pointer;
+    transform: translateY(-1px);
+}
+
+.container ol {
+    margin: 0;
+    padding: 0;
+}
+
+.container li{
+    color: brown;
+    border-bottom: 1px dashed brown;
+    padding: 2px 0;
+    margin-bottom: 2px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.edit{
+    outline: none;
+    border: 1px solid orange;
+    color: orange;
+    background-color: #ffa50022;
+    border-radius: 2px;
+    padding: 3px 8px;
+}
+.delete{
+    outline: none;
+    border: 1px solid brown;
+    color: brown;
+    background-color: #a52a2a22;
+    border-radius: 2px;
+    padding: 3px 8px;
+}
