@@ -3,7 +3,14 @@ const tasks = document.querySelector("#tasks");
 const tasksList = JSON.parse(localStorage.getItem('tasks')) ?? [];
 
 //Functions
+const addNewTasksInLS = (list) =>  localStorage.setItem('tasks', JSON.stringify(list));
+
 const deleteTask = (e) => {
+    const [taskText, ] = e.target.parentNode.childNodes;
+    const newTasksList = tasksList.filter(task => task != taskText.textContent);
+    tasks.innerHTML = "";
+    addNewTasksInLS(newTasksList);
+    displayTasks(newTasksList);
     e.target.parentNode.remove();
 }
 const editTask = (e) => {
@@ -39,7 +46,7 @@ button.addEventListener('click', () => {
     if (task != null && task != "") {
         adaugaUnTask(task);
         tasksList.push(task);
-        localStorage.setItem('tasks', JSON.stringify(tasksList));
+        addNewTasksInLS(tasksList);
     }
 });
 // Main
