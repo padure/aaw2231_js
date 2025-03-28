@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Post</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">Articole</a>
+        <a href="create.html">Articol nou</a>
+    </nav>
+    <main>
+        <div class="container">
+            <h2>Creaza un articol</h2>
+            <form class="create-form">
+                <div class="form-group">
+                    <label for="title">Titlu</label>
+                    <input type="text" name="title" id="title" required placeholder="Introdu titlul articolului">
+                </div>
+                <div class="form-group">
+                    <label for="content">Continut</label>
+                    <textarea name="content" id="content" required rows="8"></textarea>
+                </div>
+                <button type="submit" class="btn">Adauga</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        Toate drepturile rezervate
+    </footer>
+    <script src="./js/create.js" type="module"></script>
+</body>
+</html>
