@@ -1,0 +1,156 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.posts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 1rem;
+}
+
+.card {
+    box-shadow: 0 0 6px #7070708a;
+    padding: 1rem;
+    position: relative;
+}
+
+.card-single {
+    text-align: center;
+}
+
+.remove {
+    background-color: #ff0000;
+    color: #fff !important;
+    font-size: 12px;
+    cursor: pointer;
+    min-width: 80px;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.update {
+    background-color: orange;
+    color: #fff !important;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    min-width: 80px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.card > a {
+    color: inherit;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    background-color: #707070;
+    color: #fff !important;
+}
+
+.card .buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Create */
+.form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover, a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.alert {
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
