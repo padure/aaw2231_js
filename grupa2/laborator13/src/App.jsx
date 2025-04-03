@@ -9,9 +9,9 @@ import React from 'react';
 import HomePage from './pages/HomePage';
 import JobsPage from './pages/JobsPage';
 import AddJobPage from './pages/AddJobPage';
+import DeleteJobPage, {jobLoader} from './pages/DeleteJobPage';
 import EditJobPage from './pages/EditJobPage';
 import NotFoundPage from './pages/NotFoundPage';
-import DeleteJobPage, {jobLoader} from './pages/DeleteJobPage';
 //Layouts
 import MainLayout from './layouts/MainLayout';
 
@@ -37,12 +37,12 @@ const App = () => {
         />
         <Route 
           path='/edit-job/:id' 
-          element={<EditJobPage updateJobSubmit={updateJob} />} 
+          element={<EditJobPage updateJobSubmit={updateJob} />}
           loader={jobLoader} 
         />
         <Route 
           path='/jobs/:id' 
-          element={<DeleteJobPage deleteJobSubmit={deleteJob} />} 
+          element={<DeleteJobPage deleteJobSubmit={deleteJob} />}
           loader={jobLoader} 
         />
         <Route 
