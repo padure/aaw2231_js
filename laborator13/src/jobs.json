@@ -1,18 +1,46 @@
 {
-    "jobs": [
-        {
-            "id": "1",
-            "title": "Senior React Developer",
-            "type": "Full-Time",
-            "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
-            "location": "Boston, MA",
-            "salary": "$70K - $80K",
-            "company": {
-                "name": "NewTek Solutions",
-                "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
-                "contactEmail": "contact@teksolutions.com",
-                "contactPhone": "555-555-5555"
-            }
-        }
-    ]
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Senior React Developer",
+      "type": "Full-Time",
+      "description": "We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.",
+      "location": "Boston, MA",
+      "salary": "$70K - $80K",
+      "company": {
+        "name": "NewTek Solutions",
+        "description": "NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.",
+        "contactEmail": "contact@teksolutions.com",
+        "contactPhone": "555-555-5555"
+      }
+    },
+    {
+      "id": "9712",
+      "title": "Junior React Developer at CodeGen Solutions",
+      "type": "Remote",
+      "location": "USA",
+      "description": "We are looking for a Junior React Developer to join our dynamic development team. The role involves developing responsive and user-friendly web applications, collaborating with senior developers, and improving the front-end architecture. Experience with JavaScript and React.js is a must. A passion for coding and learning new technologies is essential.",
+      "salary": "Under $50K",
+      "company": {
+        "name": "CodeGen Solutions",
+        "description": "CodeGen Solutions is a forward-thinking software development company specializing in web and mobile application development. We work with businesses to deliver scalable and innovative tech solutions.",
+        "contactEmail": "hr@codegensolutions.com",
+        "contactPhone": "+1 234 567 890"
+      }
+    },
+    {
+      "id": "4c17",
+      "title": "React Developer Intern at DevCraft Inc.",
+      "type": "Part-Time",
+      "location": "USA",
+      "description": "DevCraft Inc. is looking for a passionate and motivated React Developer Intern. As an intern, you will work alongside experienced developers to build web applications using React.js, enhance front-end functionality, and help troubleshoot issues. This is an excellent opportunity for recent graduates or those looking to expand their React skills in a fast-paced, collaborative environment.",
+      "salary": "Under $50K",
+      "company": {
+        "name": "DevCraft Inc.",
+        "description": "DevCraft Inc. is a technology company that specializes in custom software solutions, from mobile applications to enterprise-level systems. We focus on using cutting-edge technology to help businesses streamline their operations and improve their customer experience.",
+        "contactEmail": "recruitment@devcraft.com",
+        "contactPhone": "+1 800 123 4567"
+      }
+    }
+  ]
 }
