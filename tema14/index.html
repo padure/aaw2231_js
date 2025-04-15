@@ -13,10 +13,12 @@
             <div class="mb">
                 <label for="nume">Nume</label>
                 <input type="text" name="nume" id="nume" placeholder="Nume">
+                <div class="error"></div>
             </div>
             <div class="mb">
                 <label for="data-nasterii">Data Nasterii</label>
-                <input type="date" name="data-nasterii" id="data-nasterii">
+                <input type="date" name="data_nasterii" id="data-nasterii">
+                <div class="error"></div>
             </div>
             <div class="mb">
                 <label for="localitate">Localitate</label>
@@ -31,18 +33,19 @@
                 <label>Genul</label>
                 <div class="group">
                     <label for="masculin">Masculin</label>
-                    <input type="radio" name="genul" id="masculin">
+                    <input type="radio" name="genul" id="masculin" value="Masculin">
                 </div>
                 <div class="group">
                     <label for="femenin">Femenin</label>
-                    <input type="radio" name="genul" id="femenin">
+                    <input type="radio" name="genul" id="femenin" value="Femenin">
                 </div>
+                <div class="error"></div>
             </div>
             <div class="mb inline">
                 <label for="acord">Termeni si conditii</label>
                 <input type="checkbox" name="acord" id="acord">
             </div>
-            <button type="submit" disabled>Inregistreaza</button>
+            <button class="disabled" type="submit" disabled>Inregistreaza</button>
         </form>
     </div>
     <script src="./js/app.js"></script>

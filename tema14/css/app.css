@@ -92,6 +92,15 @@ button:hover {
     background-color: #059669; /* Verde mentă mai închis */
 }
 
+.disabled{
+    cursor: not-allowed;
+}
+
+.error{
+    color: brown;
+}
+
+/*Mobile devices*/
 @media (max-width: 768px) {
     .container {
         padding: 15px;
