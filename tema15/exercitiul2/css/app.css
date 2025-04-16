@@ -1,0 +1,72 @@
+/* General reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e8ff; /* Light violet background */
+    color: #4b0082; /* Indigo text color */
+}
+
+/* Container styling */
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #6a0dad; /* Dark violet */
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.title::first-letter{
+    text-transform: uppercase;
+}
+
+.title:hover {
+    color: #4b0082;
+}
+
+/* Paragraph styling */
+p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    color: #4b0082;
+    margin: 10px 0;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+}
+
+/* Active paragraph (to be toggled via JS) */
+p.active {
+    display: block;
+    opacity: 1;
+    max-height: 500px;
+}
+
+/* Card styling */
+.card {
+    background-color: #e6d5f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
