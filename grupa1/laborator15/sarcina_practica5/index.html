@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarcina Practica 5</title>
+    <link rel="stylesheet" href="./css/app.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="title">Filtrare Produse</h2>
+        <main>
+            <form id="filter-form">
+                <div class="checkbox-group">
+                    <label><input type="checkbox" value="electronics" /> Electronice</label>
+                    <label><input type="checkbox" value="clothing" /> Îmbrăcăminte</label>
+                    <label><input type="checkbox" value="home" /> Casă</label>
+                </div>
+                <div class="price-filter">
+                    <label for="price-range">Interval de preț:</label>
+                    <input type="range" id="price-range" min="0" max="5000" step="100" value="5000">
+                    <span id="price-value">5000 RON</span>
+                </div>
+            </form>
+            <div id="product-list" class="product-list">
+                <!-- Produsele vor fi generate din JavaScript -->
+            </div>
+        </main>
+    </div>
+    <script src="./js/app.js"></script>
+</body>
+</html>

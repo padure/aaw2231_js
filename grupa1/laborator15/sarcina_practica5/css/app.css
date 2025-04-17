@@ -1,0 +1,122 @@
+/* Resetare stiluri implicite */
+body, h1, h2, p, div, input, label, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare generală */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3f2fd; /* Skyblue deschis */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Stilizare formular de filtrare */
+#filter-form {
+    flex: 0 0 250px; /* Lățime fixă pentru filtrul din stânga */
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #0288d1;
+    text-align: center;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.checkbox-group label {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+/* Stilizare lista de produse */
+.product-list {
+    flex: 1; /* Ocupă restul spațiului */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #0288d1;
+}
+
+.product-card p {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #555;
+}
+.price-filter {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.price-filter label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.price-filter input[type="range"] {
+    width: 100%;
+    cursor: pointer;
+}
+
+#price-value {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #0288d1;
+}

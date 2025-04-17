@@ -1,0 +1,77 @@
+/* Resetare stiluri implicite */
+body, h1, h2, h3, p, div, input, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Stilizare generală */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8f0; /* Fundal deschis */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* Stilizare formular de căutare */
+.search {
+    margin-bottom: 20px;
+}
+
+.search input[type="search"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #a3d977; /* Nuanță lime */
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input[type="search"]:focus {
+    border-color: #7cb342; /* Lime mai închis */
+}
+
+/* Stilizare bloc data */
+.data {
+    padding: 20px;
+    background-color: #e8f5e9; /* Fundal lime deschis */
+    border: 2px dashed #a3d977; /* Bordură lime */
+    border-radius: 5px;
+    text-align: left;
+}
+
+.data p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff; /* Fundal alb pentru evidențiere */
+    border: 1px solid #a3d977; /* Bordură lime */
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră subtilă */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.data p:hover {
+    transform: translateY(-3px); /* Efect de ridicare */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Umbră mai pronunțată */
+}
+
+.data p:last-child {
+    margin-bottom: 0;
+}
